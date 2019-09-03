@@ -1,0 +1,17 @@
+{% extends '../layout.html' %}
+{% block title %} 👨‍🌾新闻列表 {% endblock %}
+{% block content %}
+    <div>
+        <h1>新闻列表</h1>
+        <ul>
+        {% for item in result %}
+            <li>[[item.name]]</li>
+        {% endfor %}
+        </ul>
+    <div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        console.log("新闻展示")
+    </script>
+{% endblock  %}

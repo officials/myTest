@@ -1,0 +1,22 @@
+{% extends '../layout.html' %}
+{% block title %} 项目首页 {% endblock %}
+{% block content %}
+<div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+    <button id="clickBtn">点击随机数</button>
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module">
+    import('/scripts/index.js').then(_ => {
+        _.default();
+    });
+</script>
+<script nomodule>
+    System.import('/scripts/index.js').then(_ => {
+        _.default();
+    });
+</script>
+</script>
+{% endblock  %}

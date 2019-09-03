@@ -1,0 +1,339 @@
+[2019-08-25T21:10:23.810] [ERROR] cheese - ReferenceError: aaa is not defined
+    at actionIndex (/Users/duanxinlei/Study/大话nodejs/task/controller/BooksController.js:6:21)
+    at dispatch (/usr/local/share/Library/Caches/Yarn/v4/npm-koa-compose-3.2.1-a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7/node_modules/koa-compose/index.js:44:32)
+    at next (/usr/local/share/Library/Caches/Yarn/v4/npm-koa-compose-3.2.1-a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7/node_modules/koa-compose/index.js:45:18)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-koa-router-7.4.0-aee1f7adc02d5cb31d7d67465c9eacc825e8c5e0/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/usr/local/share/Library/Caches/Yarn/v4/npm-koa-compose-3.2.1-a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7/node_modules/koa-compose/index.js:44:32)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-koa-compose-3.2.1-a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7/node_modules/koa-compose/index.js:36:12
+    at dispatch (/usr/local/share/Library/Caches/Yarn/v4/npm-koa-router-7.4.0-aee1f7adc02d5cb31d7d67465c9eacc825e8c5e0/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/usr/local/share/Library/Caches/Yarn/v4/npm-koa-compose-4.1.0-507306b9371901db41121c812e923d0d67d3e877/node_modules/koa-compose/index.js:42:32)
+    at app.use (/Users/duanxinlei/Study/大话nodejs/task/middlewares/error-handle.js:5:23)
+    at dispatch (/usr/local/share/Library/Caches/Yarn/v4/npm-koa-compose-4.1.0-507306b9371901db41121c812e923d0d67d3e877/node_modules/koa-compose/index.js:42:32)
+[2019-08-25T22:14:14.215] [ERROR] cheese - { Error: Request failed with status code 400
+    at createError (/usr/local/share/Library/Caches/Yarn/v4/npm-axios-0.19.0-8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/usr/local/share/Library/Caches/Yarn/v4/npm-axios-0.19.0-8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/usr/local/share/Library/Caches/Yarn/v4/npm-axios-0.19.0-8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8/node_modules/axios/lib/adapters/http.js:237:11)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url: 'undefined/index.php?r=books%2Findex',
+     method: 'get',
+     params: {},
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        write: [Function: writeAfterFIN],
+        [Symbol(asyncId)]: 27,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 1258,
+        [Symbol(kBytesWritten)]: 157 },
+     connection:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        write: [Function: writeAfterFIN],
+        [Symbol(asyncId)]: 27,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 1258,
+        [Symbol(kBytesWritten)]: 157 },
+     _header:
+      'GET undefined/index.php?r=books%2Findex HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.19.0\r\nHost: localhost\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256 },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: 'undefined/index.php?r=books%2Findex',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 400,
+        statusMessage: 'Bad Request',
+        client: [Socket],
+        _consuming: true,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'http:undefined/index.php?r=books%2Findex',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'http:undefined/index.php?r=books%2Findex' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] { accept: [Array], 'user-agent': [Array], host: [Array] } },
+  response:
+   { status: 400,
+     statusText: 'Bad Request',
+     headers:
+      { date: 'Sun, 25 Aug 2019 14:14:14 GMT',
+        server:
+         'Apache/2.4.39 (Unix) OpenSSL/1.0.2r PHP/7.1.29 mod_perl/2.0.8-dev Perl/v5.16.3',
+        vary: 'accept-language,accept-charset',
+        'accept-ranges': 'bytes',
+        connection: 'close',
+        'content-type': 'text/html; charset=utf-8',
+        'content-language': 'en' },
+     config:
+      { url: 'undefined/index.php?r=books%2Findex',
+        method: 'get',
+        params: {},
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'GET undefined/index.php?r=books%2Findex HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.19.0\r\nHost: localhost\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: 'undefined/index.php?r=books%2Findex',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data:
+      '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"\n  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">\n<head>\n<title>Bad request!</title>\n<link rev="made" href="mailto:you@example.com" />\n<style type="text/css"><!--/*--><![CDATA[/*><!--*/ \n    body { color: #000000; background-color: #FFFFFF; }\n    a:link { color: #0000CC; }\n    p, address {margin-left: 3em;}\n    span {font-size: smaller;}\n/*]]>*/--></style>\n</head>\n\n<body>\n<h1>Bad request!</h1>\n<p>\n\n\n    Your browser (or proxy) sent a request that\n    this server could not understand.\n\n</p>\n<p>\nIf you think this is a server error, please contact\nthe <a href="mailto:you@example.com">webmaster</a>.\n\n</p>\n\n<h2>Error 400</h2>\n<address>\n  <a href="/">localhost</a><br />\n  <span>Apache/2.4.39 (Unix) OpenSSL/1.0.2r PHP/7.1.29 mod_perl/2.0.8-dev Perl/v5.16.3</span>\n</address>\n</body>\n</html>\n\n' },
+  isAxiosError: true,
+  toJSON: [Function] }
+[2019-08-25T22:16:09.704] [ERROR] cheese - Error: Unexpected end of tag "for" on line 9 in file /Users/duanxinlei/Study/大话nodejs/task/views/books/list.html.
+    at Object.exports.throwError (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/utils.js:188:9)
+    at parseTag (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/parser.js:659:15)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/parser.js:778:15
+    at Object.exports.each (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/utils.js:45:11)
+    at Object.exports.parse (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/parser.js:755:9)
+    at exports.Swig.parse (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:383:19)
+    at exports.Swig.precompile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:526:23)
+    at exports.Swig.compile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:651:16)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:729:27
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+[2019-08-25T22:24:09.822] [ERROR] cheese - { Error: ENOENT: no such file or directory, open '/Users/duanxinlei/Study/大话nodejs/task/views/layouts/layout.html'
+    at Object.openSync (fs.js:438:3)
+    at Object.readFileSync (fs.js:343:35)
+    at Object.ret.load (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/loaders/filesystem.js:59:15)
+    at exports.Swig.parseFile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:403:31)
+    at getParents (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:480:14)
+    at exports.Swig.precompile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:527:19)
+    at exports.Swig.compile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:651:16)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:729:27
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path:
+   '/Users/duanxinlei/Study/大话nodejs/task/views/layouts/layout.html' }
+[2019-08-25T22:24:24.576] [ERROR] cheese - { Error: ENOENT: no such file or directory, open '/Users/duanxinlei/Study/大话nodejs/task/views/layouts/layout.html'
+    at Object.openSync (fs.js:438:3)
+    at Object.readFileSync (fs.js:343:35)
+    at Object.ret.load (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/loaders/filesystem.js:59:15)
+    at exports.Swig.parseFile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:403:31)
+    at getParents (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:480:14)
+    at exports.Swig.precompile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:527:19)
+    at exports.Swig.compile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:651:16)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:729:27
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path:
+   '/Users/duanxinlei/Study/大话nodejs/task/views/layouts/layout.html' }
+[2019-08-25T22:25:06.620] [ERROR] cheese - { Error: ENOENT: no such file or directory, open '/Users/duanxinlei/Study/大话nodejs/task/views/books/layouts/layout.html'
+    at Object.openSync (fs.js:438:3)
+    at Object.readFileSync (fs.js:343:35)
+    at Object.ret.load (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/loaders/filesystem.js:59:15)
+    at exports.Swig.parseFile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:403:31)
+    at getParents (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:480:14)
+    at exports.Swig.precompile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:527:19)
+    at exports.Swig.compile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:651:16)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:729:27
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path:
+   '/Users/duanxinlei/Study/大话nodejs/task/views/books/layouts/layout.html' }
+[2019-08-25T22:25:37.306] [ERROR] cheese - { Error: ENOENT: no such file or directory, open '/Users/duanxinlei/Study/大话nodejs/task/views/books/layouts/layout.html'
+    at Object.openSync (fs.js:438:3)
+    at Object.readFileSync (fs.js:343:35)
+    at Object.ret.load (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/loaders/filesystem.js:59:15)
+    at exports.Swig.parseFile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:403:31)
+    at getParents (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:480:14)
+    at exports.Swig.precompile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:527:19)
+    at exports.Swig.compile (/usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:651:16)
+    at /usr/local/share/Library/Caches/Yarn/v4/npm-swig-templates-2.0.3-6b4c43b462175df2a8da857a2043379ec6ea6fd0/node_modules/swig-templates/lib/swig.js:729:27
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path:
+   '/Users/duanxinlei/Study/大话nodejs/task/views/books/layouts/layout.html' }
